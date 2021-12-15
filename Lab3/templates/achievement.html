@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{%block title%}Мої досягнення{% endblock %}
+
+{%block menu%}
+{%for elem in menu%}
+  <a href="{{menu[elem]}}">{{elem}}</a><br>
+{% endfor %}
+{% endblock %}
+
+{%block achievement%}
+<div class="my_achievement">
+    <ul>
+      <li>Є розробником в компанії ZenwayCode</li><br>
+      <li>Володію англійською на середньому рівні</li><br>
+      <li>Отримав золоту медаль у на  змаганнях в тайському боксі</li><br>
+      <li>Вмію плавати</li><br>
+    </ul>
+</div>
+{% endblock %}

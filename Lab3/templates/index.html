@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{%block title%}Головна{% endblock %}
+{%block img%}
+<div class="fon">
+    <h1>Portfolio</h1>
+</div>
+{% endblock %}
+{%block footer%}
+<div class="alert-secondary fixed-bottom" role="alert" style="background-color: #076917; color: azure;">
+  <b>OS:</b>{{my_os}}<br>
+  <b>USER AGENT:</b>{{user_agent}}<br>
+  <b>PYTHON VESION:</b>{{version}}<br>
+  <b>TIME:</b>{{time_now}}
+</div>
+{% endblock %}
