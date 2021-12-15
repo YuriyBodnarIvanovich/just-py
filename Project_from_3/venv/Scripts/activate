@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\urabo\Desktop\venv-simple\venv"
+VIRTUAL_ENV="C:\Users\urabo\Documents\python-labs\calatlog\Project_from_3\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
