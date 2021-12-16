@@ -28,7 +28,10 @@
     </div>
   </div>
 </nav>
-
+<div class="flash_message" align="center">{% for msg in get_flashed_messages() %}
+  {{msg}}
+ {% endfor %}
+</div>
 
 {%block info%}
 {% endblock %}

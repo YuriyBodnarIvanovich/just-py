@@ -1,7 +1,8 @@
 from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
 
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'asfdsfsaaf'
-app.config['WTF_CRSF_ENAVLED'] = True
+app.config.from_object('config')
+db = SQLAlchemy(app)
 from app import view
