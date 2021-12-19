@@ -1,5 +1,4 @@
 {% extends "base.html" %}
-
 {%block title%}Контактна форма{% endblock %}
 {%block content%}
 {%from "_render_field.html" import render_field%}
@@ -16,7 +15,6 @@
     </tr>
   </thead>
   <tbody>
-
   <tr>
       <td class="table_form">{{employee.id}}</td>
        <td class="table_form">{{employee.name}}</td>
@@ -27,11 +25,15 @@
       </td>
       <td class="table_form">{{employee.count_of_completed_tasks}}</td>
       <td class="table_form">{{tasks.count()-employee.count_of_completed_tasks}}</td>
+<!--      {%if tasks.count() != 0%}-->
+<!--      <td class="table_form">{{tasks.count()-employee.count_of_completed_tasks}}</td>-->
+<!--      {%else%}-->
+<!--       <td class="table_form">0</td>-->
+<!--      {%endif%}-->
   </tr>
   </tbody>
 </table>
      <a href="/employee/{{ employee.id }}/update" class="btn btn-primary fs-5"> Edit </a>
      <a href="/employee/{{ employee.id }}/delete" class="btn  btn-danger fs-5"> Delete </a>
 </div>
-
 {% endblock %}
