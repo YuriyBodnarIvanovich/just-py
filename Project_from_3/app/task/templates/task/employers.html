@@ -5,7 +5,7 @@
 {%from "_render_field.html" import render_field%}
  <div class="form-wrapper" align="center">
      <br>
-      <form action="{{ url_for('employee_create') }}">
+      <form action="{{ url_for('task_bp_in.employee_create') }}">
         <input  class="btn btn-light btn-lg" type="submit" value="Додати виконавця" />
      </form>
      <br>
@@ -19,7 +19,7 @@
   <tbody>
   {% for employee in employers %}
   <tr>
-       <td class="table_form"><a class="href_in_background" href="/employee/{{employee.id}}">{{employee.name}}</a></td>
+       <td class="table_form"><a class="href_in_background" href="{{url_for('task_bp_in.employee')}}/{{employee.id}}">{{employee.name}}</a></td>
       <td class="table_form">{{employee.count_of_completed_tasks}}</td>
   </tr>
   {%endfor%}

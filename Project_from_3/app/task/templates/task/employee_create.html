@@ -4,7 +4,7 @@
 {%block content%}
 {%from "_render_field.html" import render_field%}
  <div class="form-wrapper" align="center">
-      <form method="POST" action="{{ url_for('category_create') }}">
+      <form method="POST" action="{{ url_for('task_bp_in.employee_create') }}">
                   {{form.csrf_token}}
                   {{ render_field(form.name) }}
           <br>

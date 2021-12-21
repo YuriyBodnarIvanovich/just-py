@@ -20,12 +20,12 @@
   </tr>
   </tbody>
 </table>
-     <a href="/category/{{ category.id }}/update" class="btn btn-primary fs-5"> Edit </a>
-     <a href="/category/{{ category.id }}/delete" class="btn  btn-danger fs-5"> Delete </a>
-<!--     <form action="{{ url_for('task_update', id=category.id) }}">-->
+     <a href="{{url_for('task_bp_in.category')}}/{{ category.id }}/update" class="btn btn-primary fs-5"> Edit </a>
+     <a href="{{url_for('task_bp_in.category')}}/{{ category.id }}/delete" class="btn  btn-danger fs-5"> Delete </a>
+<!--     <form action="{{ url_for('task_bp_in.task_update', id=category.id) }}">-->
 <!--        <input  class="btn btn-primary" type="submit" value="Edit" />-->
 <!--     </form>-->
-<!--     <form action="{{ url_for('task_delete', id=category.id) }}">-->
+<!--     <form action="{{ url_for('task_bp_in.task_delete', id=category.id) }}">-->
 <!--         <input  class="btn btn-danger" type="submit" value="Delete" />-->
 <!--     </form>-->
 </div>
